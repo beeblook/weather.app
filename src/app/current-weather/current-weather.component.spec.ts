@@ -33,37 +33,37 @@ describe('CurrentWeatherComponent', () => {
     component = fixture.componentInstance;
   });
 
-  // it('should create', () => {
-  //   // Arrange
-  //   weatherServiceMock.getCurrentWeather.and.returnValue(of());
-  //   // Act
-  //   fixture.detectChanges(); // triggers ngOnInit
-  //   // Assert
-  //   // expect(component).toBeTruthy();
-  //   expect(weatherServiceMock.getCurrentWeather).toHaveBeenCalledTimes(1);
-  // });
+  it('should create', () => {
+    // Arrange
+    weatherServiceMock.getCurrentWeather.and.returnValue(of());
+    // Act
+    fixture.detectChanges(); // triggers ngOnInit
+    // Assert
+    // expect(component).toBeTruthy();
+    expect(weatherServiceMock.getCurrentWeather).toHaveBeenCalledTimes(1);
+  });
 
-  // it('should create', () => {
-  //   // Arrange
-  //   weatherServiceMock.getCurrentWeather.and.returnValue(of());
+  it('should create', () => {
+    // Arrange
+    weatherServiceMock.getCurrentWeather.and.returnValue(of());
 
-  //   // Act
-  //   fixture.detectChanges(); // triggers ngOnInit
+    // Act
+    fixture.detectChanges(); // triggers ngOnInit
 
-  //   // Assert
-  //   expect(component).toBeTruthy();
-  // });
+    // Assert
+    expect(component).toBeTruthy();
+  });
 
-  // it('should get currentWeather from weatherService', () => {
-  //   // Arrange
-  //   weatherServiceMock.getCurrentWeather.and.returnValue(of());
+  it('should get currentWeather from weatherService', () => {
+    // Arrange
+    weatherServiceMock.getCurrentWeather.and.returnValue(of());
 
-  //   // Act
-  //   fixture.detectChanges(); // triggers ngOnInit()
+    // Act
+    fixture.detectChanges(); // triggers ngOnInit()
 
-  //   // Assert
-  //   expect(weatherServiceMock.getCurrentWeather).toHaveBeenCalledTimes(1);
-  // });
+    // Assert
+    expect(weatherServiceMock.getCurrentWeather).toHaveBeenCalledTimes(1);
+  });
 
   // it('should eagerly load currentWeather in Bethesda from weatherService', () => {
   //   // Arrange
