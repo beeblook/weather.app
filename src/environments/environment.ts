@@ -2,8 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+//   $http_result = drupal_http_request('http://api.openweathermap.org/data/2.5/weather?id=702550&appid=dd4c65e42c6be0a9a64c50b8cf85ed56&lang=ua&units=metric', $options);
+
 export const environment = {
-  production: false
+  production: false,
+  appId: 'dd4c65e42c6be0a9a64c50b8cf85ed56',
+  baseUrl: 'http://',
 };
 
 /*
